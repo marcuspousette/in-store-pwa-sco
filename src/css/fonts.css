@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "HMAmpersand-Light";
+    src: url("../fonts/HMAmpersand-Light.ttf");
+}
+@font-face {
+    font-family: "HMAmpersand-Regular";
+    src: url("../fonts/HMAmpersand-Regular.ttf");
+}
+@font-face {
+    font-family: "HMAmpersand-DemiBold";
+    src: url("../fonts/HMAmpersand-DemiBold.ttf");
+}
+@font-face {
+    font-family: "HMAmpersand-Bold";
+    src: url("../fonts/HMAmpersand-Bold.ttf");
+}
