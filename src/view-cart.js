@@ -14,8 +14,7 @@ import { arrowDownWhite } from './images/arrow-down-white.js';
 export class viewCart extends LitElement {
   static get properties() {
     return {
-      title: { type: String },
-      page: { type: String },
+        cart: { type: Object },
     };
   }
 
@@ -271,53 +270,53 @@ export class viewCart extends LitElement {
                 <div class="cart">
                     <vaadin-horizontal-layout class="cart-row">
                         <div class="cart-column">
-                            <cart-item  img_src="https://dc-key-generator.azurewebsites.net/dckeygenerator?article_id=0824878001" name="Stickad tröja" white_price="129.00" discount_price="" currency="kr." art_nr="0824878001" color="Ljusrosa/Grå" size="170" gtin="[object Object]" uuid="7da6fc64-85a5-4fb2-9c92-277dd283bda9"></cart-item>
+                            <cart-item img_src="https://instorepwacheckoutapi.azurewebsites.net/api/v1/InStorePwaApi/getResourceUrlByProductId/0824878001/assetType/descriptiveStillLife/rendition/medium" name="Stickad tröja" white_price="129.00" discount_price="" currency="kr." art_nr="0824878001" color="Ljusrosa/Grå" size="170" gtin="[object Object]" uuid="7da6fc64-85a5-4fb2-9c92-277dd283bda9"></cart-item>
                         </div>
 
                         <div class="cart-column">
-                            <cart-item img_src="https://dc-key-generator.azurewebsites.net/dckeygenerator?article_id=0540338003" name="Jeansjacka" white_price="499.00" discount_price="199.00" currency="kr." art_nr="0540338003" color="Rosa denim" size="S" gtin="[object Object]" uuid="cadd0704-09ab-4d06-b71d-ff1715ac8aea"></cart-item>
+                            <cart-item img_src="https://instorepwacheckoutapi.azurewebsites.net/api/v1/InStorePwaApi/getResourceUrlByProductId/0540338003/assetType/descriptiveStillLife/rendition/medium" name="Jeansjacka" white_price="499.00" discount_price="199.00" currency="kr." art_nr="0540338003" color="Rosa denim" size="S" gtin="[object Object]" uuid="cadd0704-09ab-4d06-b71d-ff1715ac8aea"></cart-item>
                         </div>
 
                         <div class="cart-column">
-                            <cart-item img_src="https://dc-key-generator.azurewebsites.net/dckeygenerator?article_id=0785706001" name="Pilejacka med ståkrage" white_price="249.00" discount_price="" currency="kr." art_nr="0785706001" color="Crèmevit" size="M" gtin="[object Object]" uuid="5a3b2ec6-8dd3-45ff-bb5f-f0fcd7b17502"></cart-item>
+                            <cart-item img_src="https://instorepwacheckoutapi.azurewebsites.net/api/v1/InStorePwaApi/getResourceUrlByProductId/0785706001/assetType/descriptiveStillLife/rendition/medium" name="Pilejacka med ståkrage" white_price="249.00" discount_price="" currency="kr." art_nr="0785706001" color="Crèmevit" size="M" gtin="[object Object]" uuid="5a3b2ec6-8dd3-45ff-bb5f-f0fcd7b17502"></cart-item>
                         </div>
                     </vaadin-horizontal-layout>
 
                     <vaadin-horizontal-layout class="cart-row">
                         <div class="cart-column">
-                            <cart-item  img_src="https://dc-key-generator.azurewebsites.net/dckeygenerator?article_id=0824878001" name="Stickad tröja" white_price="129.00" discount_price="" currency="kr." art_nr="0824878001" color="Ljusrosa/Grå" size="170" gtin="[object Object]" uuid="7da6fc64-85a5-4fb2-9c92-277dd283bda9"></cart-item>
+                            <cart-item  img_src="https://instorepwacheckoutapi.azurewebsites.net/api/v1/InStorePwaApi/getResourceUrlByProductId/0824878001/assetType/descriptiveStillLife/rendition/medium" name="Stickad tröja" white_price="129.00" discount_price="" currency="kr." art_nr="0824878001" color="Ljusrosa/Grå" size="170" gtin="[object Object]" uuid="7da6fc64-85a5-4fb2-9c92-277dd283bda9"></cart-item>
                         </div>
 
                         <div class="cart-column">
-                            <cart-item img_src="https://dc-key-generator.azurewebsites.net/dckeygenerator?article_id=0540338003" name="Jeansjacka" white_price="499.00" discount_price="199.00" currency="kr." art_nr="0540338003" color="Rosa denim" size="S" gtin="[object Object]" uuid="cadd0704-09ab-4d06-b71d-ff1715ac8aea"></cart-item>
+                            <cart-item img_src="https://instorepwacheckoutapi.azurewebsites.net/api/v1/InStorePwaApi/getResourceUrlByProductId/0540338003/assetType/descriptiveStillLife/rendition/medium" name="Jeansjacka" white_price="499.00" discount_price="199.00" currency="kr." art_nr="0540338003" color="Rosa denim" size="S" gtin="[object Object]" uuid="cadd0704-09ab-4d06-b71d-ff1715ac8aea"></cart-item>
                         </div>
 
                         <div class="cart-column">
-                            <cart-item img_src="https://dc-key-generator.azurewebsites.net/dckeygenerator?article_id=0785706001" name="Pilejacka med ståkrage" white_price="249.00" discount_price="" currency="kr." art_nr="0785706001" color="Crèmevit" size="M" gtin="[object Object]" uuid="5a3b2ec6-8dd3-45ff-bb5f-f0fcd7b17502"></cart-item>
+                            <cart-item img_src="https://instorepwacheckoutapi.azurewebsites.net/api/v1/InStorePwaApi/getResourceUrlByProductId/0785706001/assetType/descriptiveStillLife/rendition/medium" name="Pilejacka med ståkrage" white_price="249.00" discount_price="" currency="kr." art_nr="0785706001" color="Crèmevit" size="M" gtin="[object Object]" uuid="5a3b2ec6-8dd3-45ff-bb5f-f0fcd7b17502"></cart-item>
                         </div>
                     </vaadin-horizontal-layout>
                     
                     <vaadin-horizontal-layout class="cart-row">
                         <div class="cart-column">
-                            <cart-item  img_src="https://dc-key-generator.azurewebsites.net/dckeygenerator?article_id=0824878001" name="Stickad tröja" white_price="129.00" discount_price="" currency="kr." art_nr="0824878001" color="Ljusrosa/Grå" size="170" gtin="[object Object]" uuid="7da6fc64-85a5-4fb2-9c92-277dd283bda9"></cart-item>
+                            <cart-item  img_src="https://instorepwacheckoutapi.azurewebsites.net/api/v1/InStorePwaApi/getResourceUrlByProductId/0824878001/assetType/descriptiveStillLife/rendition/medium" name="Stickad tröja" white_price="129.00" discount_price="" currency="kr." art_nr="0824878001" color="Ljusrosa/Grå" size="170" gtin="[object Object]" uuid="7da6fc64-85a5-4fb2-9c92-277dd283bda9"></cart-item>
                         </div>
 
                         <div class="cart-column">
-                            <cart-item img_src="https://dc-key-generator.azurewebsites.net/dckeygenerator?article_id=0540338003" name="Jeansjacka" white_price="499.00" discount_price="199.00" currency="kr." art_nr="0540338003" color="Rosa denim" size="S" gtin="[object Object]" uuid="cadd0704-09ab-4d06-b71d-ff1715ac8aea"></cart-item>
+                            <cart-item img_src="https://instorepwacheckoutapi.azurewebsites.net/api/v1/InStorePwaApi/getResourceUrlByProductId/0540338003/assetType/descriptiveStillLife/rendition/medium" name="Jeansjacka" white_price="499.00" discount_price="199.00" currency="kr." art_nr="0540338003" color="Rosa denim" size="S" gtin="[object Object]" uuid="cadd0704-09ab-4d06-b71d-ff1715ac8aea"></cart-item>
                         </div>
 
                         <div class="cart-column">
-                            <cart-item img_src="https://dc-key-generator.azurewebsites.net/dckeygenerator?article_id=0785706001" name="Pilejacka med ståkrage" white_price="249.00" discount_price="" currency="kr." art_nr="0785706001" color="Crèmevit" size="M" gtin="[object Object]" uuid="5a3b2ec6-8dd3-45ff-bb5f-f0fcd7b17502"></cart-item>
+                            <cart-item img_src="https://instorepwacheckoutapi.azurewebsites.net/api/v1/InStorePwaApi/getResourceUrlByProductId/0785706001/assetType/descriptiveStillLife/rendition/medium" name="Pilejacka med ståkrage" white_price="249.00" discount_price="" currency="kr." art_nr="0785706001" color="Crèmevit" size="M" gtin="[object Object]" uuid="5a3b2ec6-8dd3-45ff-bb5f-f0fcd7b17502"></cart-item>
                         </div>
                     </vaadin-horizontal-layout>
 
                     <vaadin-horizontal-layout class="cart-row">
                         <div class="cart-column">
-                            <cart-item img_src="https://dc-key-generator.azurewebsites.net/dckeygenerator?article_id=0368300015" name="Bomullsshorts" white_price="149.00" discount_price="59.90" currency="kr." art_nr="0368300015" color="Röd" size="M" gtin="[object Object]" uuid="f433bd65-d024-4bb6-8f67-4a7b8c278f87"></cart-item>
+                            <cart-item img_src="https://instorepwacheckoutapi.azurewebsites.net/api/v1/InStorePwaApi/getResourceUrlByProductId/0368300015/assetType/descriptiveStillLife/rendition/medium" name="Bomullsshorts" white_price="149.00" discount_price="59.90" currency="kr." art_nr="0368300015" color="Röd" size="M" gtin="[object Object]" uuid="f433bd65-d024-4bb6-8f67-4a7b8c278f87"></cart-item>
                         </div>
 
                         <div class="cart-column">
-                            <cart-item img_src="https://dc-key-generator.azurewebsites.net/dckeygenerator?article_id=0820526002" name="Joggers" white_price="149.00" discount_price="" currency="kr." art_nr="0820526002" color="Ljusbeige/Revärer" size="152" gtin="[object Object]" uuid="66ab31f9-53cf-4461-b73c-4987ed4f3a77"></cart-item>
+                            <cart-item img_src="https://instorepwacheckoutapi.azurewebsites.net/api/v1/InStorePwaApi/getResourceUrlByProductId/0820526002/assetType/descriptiveStillLife/rendition/medium" name="Joggers" white_price="149.00" discount_price="" currency="kr." art_nr="0820526002" color="Ljusbeige/Revärer" size="152" gtin="[object Object]" uuid="66ab31f9-53cf-4461-b73c-4987ed4f3a77"></cart-item>
                         </div>
 
                         <div class="cart-column">
