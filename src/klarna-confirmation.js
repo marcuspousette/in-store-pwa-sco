@@ -1,17 +1,17 @@
 /**
  * @author fullstackmac <marcus.pousette@mmrsolutions.se>
- * @param { Array<Item> } items The list of items to be ordered
- * @param { URL } endpoint The API that creates an order to Klarna
+ * @param { URL } endpoint The API that creates a confirmation request to Klarna
  * @param { String } iframeBoxID A element id to a div that is placed in the root of the body.
  * @dependencies A div element with id={iframeBoxID} that is placed in the root of the body.
  */
 import { html, LitElement } from 'lit-element';
-import { Item } from './item.js';
-export class KlarnaCheckout extends LitElement {
+export class KlarnaConfirmation extends LitElement {
   connectedCallback() {
     super.connectedCallback();
-    const { items, endpoint } = this;
-    this.getSnippet(endpoint, { items })
+    const { endpoint } = this;
+    const urlParams = new URLSearchParams(window.location.search);
+    const order_id = urlParams.get('order_id');
+    this.getSnippet(endpoint, { order_id })
       .then(data => this.renderSnippet(data))
       .catch(console.log);
   }
@@ -35,7 +35,6 @@ export class KlarnaCheckout extends LitElement {
 
   static get properties() {
     return {
-      items: { type: Item },
       endpoint: { type: URL },
       iframeBoxID: { type: String },
     };
@@ -66,4 +65,4 @@ export class KlarnaCheckout extends LitElement {
   }
 }
 
-customElements.define('klarna-checkout', KlarnaCheckout);
+customElements.define('klarna-confirmation', KlarnaConfirmation);
